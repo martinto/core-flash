@@ -8,7 +8,7 @@ namespace Core.Flash
 {
     public class Flasher : IFlasher
     {
-        private ITempDataDictionary tempData;
+        private readonly ITempDataDictionary tempData;
 
         public Flasher(ITempDataDictionaryFactory factory, IHttpContextAccessor contextAccessor)
         {

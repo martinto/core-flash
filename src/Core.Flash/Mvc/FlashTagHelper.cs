@@ -10,7 +10,7 @@ namespace Core.Flash.Mvc
     [HtmlTargetElement("div", Attributes = "flashes")]
     public class FlashesTagHelper : TagHelper
     {
-        private ITempDataDictionary tempData;
+        private readonly ITempDataDictionary tempData;
 
         private const string HtmlStandardTemplate = "<div class=\"alert alert-{0}\">{1}</div>";
 
