@@ -1,10 +1,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26510.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{703E4FFC-3CDD-46A3-B2D3-4DBD5E070AE8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Flash", "src\Core.Flash\Core.Flash.csproj", "{C3E23D05-959B-4FAD-88DD-321C6AEEE827}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Flash2", "src\Core.Flash\Core.Flash2.csproj", "{C3E23D05-959B-4FAD-88DD-321C6AEEE827}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{B90096D8-ADF2-4386-A01B-EB1F37E5EA3D}"
 EndProject
@@ -51,5 +51,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C3E23D05-959B-4FAD-88DD-321C6AEEE827} = {703E4FFC-3CDD-46A3-B2D3-4DBD5E070AE8}
 		{62736F36-AF36-4533-9703-0B963583BDA9} = {B90096D8-ADF2-4386-A01B-EB1F37E5EA3D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24FE7FE8-A748-4253-BEF5-039C8DD2A989}
 	EndGlobalSection
 EndGlobal

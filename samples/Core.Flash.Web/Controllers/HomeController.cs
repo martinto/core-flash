@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Core.Flash2;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Core.Flash.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private IFlasher f;
+        private readonly IFlasher f;
 
         public HomeController(IFlasher f)
         {

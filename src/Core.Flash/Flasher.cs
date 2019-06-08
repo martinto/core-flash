@@ -1,10 +1,10 @@
-﻿using Core.Flash.Extensions;
-using Core.Flash.Model;
+﻿using Core.Flash2.Extensions;
+using Core.Flash2.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using System.Collections.Generic;
 
-namespace Core.Flash
+namespace Core.Flash2
 {
     public class Flasher : IFlasher
     {

@@ -1,6 +1,6 @@
-﻿namespace Core.Flash
+﻿namespace Core.Flash2
 {
-    public class Constants
+    public static class Constants
     {
         public const string Key = "__flash__";
     }

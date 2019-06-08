@@ -1,4 +1,4 @@
-﻿namespace Core.Flash.Model
+﻿namespace Core.Flash2.Model
 {
     public class Message
     {

@@ -1,11 +1,11 @@
-﻿using Core.Flash.Extensions;
-using Core.Flash.Model;
+﻿using Core.Flash2.Extensions;
+using Core.Flash2.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using System.Collections.Generic;
 
-namespace Core.Flash.Mvc
+namespace Core.Flash2.Mvc
 {
     [HtmlTargetElement("div", Attributes = "flashes")]
     public class FlashesTagHelper : TagHelper

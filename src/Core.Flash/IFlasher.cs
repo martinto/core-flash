@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Core.Flash
+﻿namespace Core.Flash2
 {
     public interface IFlasher
     {

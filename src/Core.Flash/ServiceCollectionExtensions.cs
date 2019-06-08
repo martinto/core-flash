@@ -1,4 +1,4 @@
-﻿using Core.Flash;
+﻿using Core.Flash2;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
 namespace Microsoft.Extensions.DependencyInjection
