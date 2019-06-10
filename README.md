@@ -1,4 +1,4 @@
-# Core.Flash22 [![NuGet](https://img.shields.io/nuget/v/Core.Flash2.svg)](https://www.nuget.org/packages/Core.Flash2/)
+# Core.Flash2 [![NuGet](https://img.shields.io/nuget/v/Core.Flash2.svg)](https://www.nuget.org/packages/Core.Flash2/)
 
 Minimalistic flash message system for ASP.NET MVC Core to provide contextual feedback messages between actions. Forked from lurumad/core-flash and
 converted to run on netcoreapp2.2
