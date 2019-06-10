@@ -1,18 +1,19 @@
-# Core.Flash [![NuGet](https://img.shields.io/nuget/v/Core.Flash.svg)](https://www.nuget.org/packages/Core.Flash/)
+# Core.Flash22 [![NuGet](https://img.shields.io/nuget/v/Core.Flash2.svg)](https://www.nuget.org/packages/Core.Flash2/)
 
-Minimalistic flash message system for ASP.NET MVC Core to provide contextual feedback messages between actions.
+Minimalistic flash message system for ASP.NET MVC Core to provide contextual feedback messages between actions. Forked from lurumad/core-flash and
+converted to run on netcoreapp2.2
 
-### Install Core.Flash
+### Install Core.Flash2
 
-You should install [Core.Flash](https://www.nuget.org/packages/Core.Flash/):
+You should install [Core.Flash2](https://www.nuget.org/packages/Core.Flash2/):
 
-    Install-Package Core.Flash
-    
-This command from Package Manager Console will download and install Core.Flash and all required dependencies.
+    Install-Package Core.Flash2
 
-### Meet Core.Flash
+This command from Package Manager Console will download and install Core.Flash2 and all required dependencies.
 
-Register **Core.Flash** services in your **Startup** class
+### Meet Core.Flash2
+
+Register **Core.Flash2** services in your **Startup** class
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -22,7 +23,7 @@ public void ConfigureServices(IServiceCollection services)
       .AddMvc();
 }
 ```
-Once you have been register **Core.Flash** services, you can inject the **IFlasher** interface in your Controllers:
+Once you have been register **Core.Flash2** services, you can inject the **IFlasher** interface in your Controllers:
 
 ```csharp
 public HomeController(IFlasher f)
@@ -40,12 +41,12 @@ public IActionResult YourAction()
     return RedirectToAction("AnotherAction");
 }
 ```
-Add **Core.Flash TagHelper** to your **_ViewImports.cs**
+Add **Core.Flash2 TagHelper** to your **_ViewImports.cs**
 
 ```csharp
-@using Core.Flash.Web
+@using Core.Flash2.Web
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@addTagHelper *, Core.Flash
+@addTagHelper *, Core.Flash2
 ```
 Add the TagHelper to your **_Layout.cs**
 
@@ -60,7 +61,7 @@ Add the TagHelper to your **_Layout.cs**
 </div>
 ```
 
-**Core.Flash** uses [Bootstrap Alerts](https://v4-alpha.getbootstrap.com/components/alerts/).
+**Core.Flash2** uses [Bootstrap Alerts](https://v4-alpha.getbootstrap.com/components/alerts/).
 
 ![Sample](https://github.com/lurumad/core-flash/blob/master/assets/flash.gif)
 
