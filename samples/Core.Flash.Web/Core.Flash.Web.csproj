@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Core.Flash\Core.Flash2.csproj" />
+    <ProjectReference Include="..\..\src\Core.Flash2\Core.Flash2.csproj" />
   </ItemGroup>
 
 </Project>
