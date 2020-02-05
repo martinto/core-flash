@@ -12,14 +12,20 @@ namespace Core.Flash2
 
         public Flasher(ITempDataDictionaryFactory factory, IHttpContextAccessor contextAccessor)
         {
-            tempData = factory.GetTempData(contextAccessor.HttpContext);
+            if (contextAccessor?.HttpContext != null)
+            {
+                tempData = factory.GetTempData(contextAccessor.HttpContext);
+            }
         }
 
         public void Flash(string type, string message, bool dismissable = false)
         {
-            var messages = tempData.Get<Queue<Message>>(Constants.Key) ?? new Queue<Message>();
-            messages.Enqueue(new Message(type, message, dismissable));
-            tempData.Put(Constants.Key, messages);
+            if (tempData is ITempDataDictionary)
+            {
+                var messages = tempData.Get<Queue<Message>>(Constants.Key) ?? new Queue<Message>();
+                messages.Enqueue(new Message(type, message, dismissable));
+                tempData.Put(Constants.Key, messages);
+            }
         }
     }
 }
